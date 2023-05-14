@@ -1,0 +1,104 @@
+@font-face {
+    font-family: asde;
+    src: url(../font/static/folder/Gilroy-ExtraBold.otf);
+    src: url(../font/static/folder/Gilroy-Light.otf);
+}
+body { font-family: asde; font-size: 24px; color: #242424; font-weight: 900; cursor: default;}
+.inp { width: 300px; padding: 15px 20px; border: 2px solid #242424; border-radius: 7px; font-weight: 200;}
+.btn, .btn_mp { width: 300px; background-color: #242424; padding: 17px 0px; 
+    color: white; border-radius: 7px; text-align: center; cursor: pointer; 
+    border: 2px solid #242424; transition: all 0.5s ease;}
+.btn:hover { background-color: white; color: #242424; }
+
+.background { height: 100vh; display: flex; flex-direction: column; justify-content: space-between;}
+.main { width: 100%; height: 85%; display: flex; align-items: center; justify-content: center;}
+.container_object, .container_logo { display: flex; flex-direction: column; align-items: center; }
+.container_logo { margin-bottom: 50px; }
+.inp_aut { margin-bottom: 25px; }
+
+.reverse_btn { border: 2px solid #242424; text-align: center; width: 300px; padding: 17px 0px;
+    border-radius: 7px; cursor: pointer; transition: all 0.5s ease; margin-top: 10px; color: #242424;
+}
+
+.btn_rec {margin-top: 20px;}
+.inp_rec {margin: 5px 0px;}
+
+.cnt_inf_title, .cnt_inf_description { box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1); border-radius: 15px; 
+    padding: 15px 10px 10px; display: flex; flex-direction: column; align-items: center;
+    margin: 0px 20px;
+}
+.inf_title { font-size: 45px; margin-bottom: 20px;}
+.inf_blocks { display: flex; justify-content: center; flex-wrap: wrap;}
+.inf_block { display: flex; align-items: center; box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25); 
+    border-radius: 50px; margin: 10px;
+}
+.inf_cnt_img { width: 45px; height: 45px; border-radius: 50px; box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+    display: flex; align-items: center; justify-content: center;
+}
+.inf_title_txt { margin: 0px 25px 0px 10px ; }
+
+.cnt_inf_description { margin-top: 30px; padding: 15px; flex-wrap: wrap; 
+    flex-direction: row; justify-content: center; max-width: 712px; max-height: 42vh; 
+    overflow:scroll; overflow-x: hidden;}
+.cnt_inf_description::-webkit-scrollbar { width: 10px; }
+.cnt_inf_description::-webkit-scrollbar-thumb {
+    background-color: #242424; border-radius: 9em; }
+/* ---- */
+.dcr_block { box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.08); border-radius: 7px;
+    margin: 10px; width: 315px;
+}
+.wrapper_dcr_block { padding: 20px 25px; }
+.btn_delete { text-align: center; background-color: #242424; color: white; 
+    border-radius: 0px 0px 7px 7px; padding: 10px 0px; cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn_delete:hover { background-color: white; color: #242424; }
+
+.dcr_txt { margin: 20px 0px;}
+
+.chane { }
+.backlight { color: #9d9d9d; }
+.zazi { margin-top: 50px; margin-bottom: 30px;}
+
+.href { display: flex; justify-content: center; margin: 50px 0px; }
+.container_img {margin: 5%; background-color: #242424; width: 40px; height: 40px; 
+    display: flex; align-items: center; justify-content: center; border-radius: 10px;
+    margin: 0px 4px; transition: all 0.7s ease;
+}
+.container_img:hover { transform:rotate(360deg) }
+.reverse_btn:hover, .btn_mp:hover {transform: scale(1.03); }
+
+.cnt_admin_main { box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1); padding: 7.5px 5px; border-radius: 15px;
+    max-height: 50vh; overflow: scroll; overflow-x: hidden; margin: 0px 20px;
+}
+.cnt_admin_main::-webkit-scrollbar { width: 10px; }
+.cnt_admin_main::-webkit-scrollbar-thumb {
+    background-color: #242424; border-radius: 9em; }
+.card_pol { display: flex; justify-content: space-between; width: 500px; padding: 20px;
+    border-radius: 7px; box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.13); margin: 15px 15px;
+}
+.txt_admin_login { color: #242424;
+}
+.icon_card { cursor: pointer; }
+.icons_admin_ {
+}
+
+.btn_ma { margin-top: 30px;}
+
+@media screen and (max-width: 760px) {
+    .cnt_inf_description { max-height: 42vh;}
+    .zh { margin: 20px 0px;}
+    .zazi { margin-top: 50px; }
+    .card_pol { width: 300px; }
+}
+
+@media screen and (max-width: 480px) {
+    .inf_title_txt, .dcr_txt { font-size: 19px;}
+    .form_aut, .form_rec { margin-top: 50px;}
+    .container_logo {margin-bottom: 0px;}
+    .cnt_inf_title { margin-top: 20px; }
+    .cnt_inf_description { max-height: 35vh;}
+    .card_pol { width: 260px; }
+    .cnt_admin_main { box-shadow: 0px 0px 0px 0px; margin: 0px; margin-top: 20px; }
+    .dcr_block { width: 200px; }
+}
