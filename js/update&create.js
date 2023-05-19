@@ -14,7 +14,7 @@ const deleteBtn = document.querySelector(".reverse_btn")
 
 
 if(userSettings){
-  title.innerHTML = "Update info"
+  title.innerHTML = "update info"
   getUserByID(userSettings).then(user => {
     login.value = user.login
     name.value = user.name
@@ -31,7 +31,7 @@ if(userSettings){
       updateUserByID(userSettings, data).then(res => location.href = "../html/main_admin.html")
     }
     else{
-      alert("Проверьте введённые данные")
+      alert("check the entered data")
     }
   })
 
@@ -40,7 +40,7 @@ if(userSettings){
   })
 }
 else{
-  title.innerHTML = "Create user"
+  title.innerHTML = "create user"
   deleteBtn.style.display = "none"
 
   enterBtn.addEventListener("click", (e)=> {
@@ -55,7 +55,7 @@ else{
       setUser(data).then(res => location.href = "../html/main_admin.html")
     }
     else{
-      alert("Проверьте введённые данные")
+      alert("check the entered data")
     }
   })
 }
