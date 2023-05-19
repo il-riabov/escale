@@ -8,6 +8,9 @@ authBtn.addEventListener("click", (e) => {
   if (login.value == "admin") {
     location.href = "html/main_admin.html";
   }
+  else if (login.value == "") {
+    alert("поле не доложно оставаться пустым")
+  }
   else {
     e.preventDefault()
     getUsers().then(users => {
@@ -18,6 +21,10 @@ authBtn.addEventListener("click", (e) => {
           console.log(user)
           localStorage.setItem("user", JSON.stringify(user))
           break;
+        }
+        else {
+          alert("Пользователь не найден")
+          login.value = "";
         }
       }
     })
