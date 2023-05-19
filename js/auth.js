@@ -9,7 +9,7 @@ authBtn.addEventListener("click", (e) => {
     location.href = "html/main_admin.html";
   }
   else if (login.value == "") {
-    alert("поле не доложно оставаться пустым")
+    alert("the field must not be empty")
   }
   else {
     e.preventDefault()
@@ -23,7 +23,7 @@ authBtn.addEventListener("click", (e) => {
           break;
         }
         else {
-          alert("Пользователь не найден")
+          alert("user is not found")
           login.value = "";
         }
       }
