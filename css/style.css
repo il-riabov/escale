@@ -99,7 +99,7 @@ body { font-family: asde; font-size: 24px; color: #242424; font-weight: 900; cur
     .container_logo {margin-bottom: 0px;}
     .cnt_inf_title { margin-top: 20px; }
     .cnt_inf_description { max-height: 35vh;}
-    .card_pol { margin: 15px 0px; }
+    .card_pol { margin: 15px 0px; width: 300px}
     .cnt_admin_main { box-shadow: 0px 0px 0px 0px; margin: 0px; margin-top: 20px; }
     .dcr_block { width: 200px; }
 }
