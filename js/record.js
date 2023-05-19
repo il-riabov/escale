@@ -24,11 +24,11 @@ addProjBtn.addEventListener("click", () => {
       setItem(data).then(res => location.href = "../html/main_pol.html");
     }
     else {
-      alert("првоерьте правильность ввода данных")
+      alert("data entered incorrectly")
     }
   }
   else {
-    alert("првоерьте правильность ввода данных")
+    alert("data entered incorrectly")
   }
 })
 
