@@ -22,10 +22,12 @@ authBtn.addEventListener("click", (e) => {
           localStorage.setItem("user", JSON.stringify(user))
           break;
         }
+        else {
+          alert("user is not found")
+          login.value = ""; }
+          break;
+        }
       }
     }) 
   }
-  if (login.value != user.login) { 
-    alert("user is not found")
-    login.value = ""; }  
 })
