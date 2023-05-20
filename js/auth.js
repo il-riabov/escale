@@ -11,22 +11,21 @@ authBtn.addEventListener("click", (e) => {
   else if (login.value == "") {
     alert("the field must not be empty")
   }
-  else {
+  else if (login.value != "") {
     e.preventDefault()
     getUsers().then(users => {
       for(let user of users){
         if(user.login === login.value){
           location.href = "html/main_pol.html";
           login.value = "";
+          dr = true;
           console.log(user)
           localStorage.setItem("user", JSON.stringify(user))
           break;
         }
-        else {
-          alert("user is not found");
-          login.value = "";
-          break;
-        }
+      }
+      if (dr != true) {
+        alert("no");
       }
     })
   }
