@@ -25,6 +25,7 @@ authBtn.addEventListener("click", (e) => {
         else {
           alert("user is not found");
           login.value = "";
+          break;
         }
       }
     })
