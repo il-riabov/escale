@@ -23,11 +23,10 @@ authBtn.addEventListener("click", (e) => {
           break;
         }
         else {
-          alert("user is not found")
-          login.value = ""; }
-          break;
+          alert("user is not found");
+          login.value = "";
         }
       }
-    }) 
+    })
   }
 })
