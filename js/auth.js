@@ -23,9 +23,9 @@ authBtn.addEventListener("click", (e) => {
           break;
         }
       }
-    })
+    }) 
+  }
   if (login.value != user.login) { 
     alert("user is not found")
-    login.value = ""; }   
-  }
+    login.value = ""; }  
 })
