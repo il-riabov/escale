@@ -23,6 +23,7 @@ authBtn.addEventListener("click", (e) => {
           localStorage.setItem("user", JSON.stringify(user))
           break;
         }
+        else { login.value = ""; }
       }
       if (dr != true) {
         alert("no");
